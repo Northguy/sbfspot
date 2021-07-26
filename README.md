@@ -11,6 +11,11 @@ It includes:
 To run SBFspot, you must provide a configuration file (SBFspot.cfg) and map it in the container. Please also make a backup of your config as the container edits the file.
 To run SBFspotUploadDaemon, you must provide a configuration file (SBFspotUpload.cfg) and map it in the container.
 
+The configuration files can be obtained from the SBFspot repository:
+```
+curl -O https://raw.githubusercontent.com/SBFspot/SBFspot/master/SBFspotUploadDaemon/SBFspotUpload.cfg
+curl -O https://raw.githubusercontent.com/SBFspot/SBFspot/master/SBFspot/SBFspot.cfg
+```
 ## Caveats
 
 If your Inverters communicate with Bluetooth, you have to start the SBFspot container in the host network (Option --network host, see usage examples below). Thereby every device including Bluetooth devices are mapped to the container.
